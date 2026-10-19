@@ -1,7 +1,7 @@
 export const COMPANY = {
   name: "SLN GLOBALS",
   tagline: "Spices · Packaged Water · Pharmaceuticals — from Telangana to the world",
-  email: "info@slnglobals.com",
+  email: "slnglobals@gmail.com",
   phone: "+91 98765 43210",
   whatsapp: "919876543210",
   address:

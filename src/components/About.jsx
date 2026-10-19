@@ -1,4 +1,5 @@
 import { COMPANY, WHY_US } from "../data";
+import founderImg from "../assets/founder-sathwik.jpg";
 
 export default function About() {
   return (
@@ -53,23 +54,47 @@ export default function About() {
 
           {/* right: facts + why us */}
           <div>
-            {/* founder / entity card */}
-            <div className="rounded-2xl border border-brand-100 bg-brand-50/60 p-5">
-              <div className="flex items-start gap-4">
-                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-accent-500/15 text-2xl">
-                  🧑‍💼
-                </span>
-                <dl className="grid flex-1 grid-cols-1 gap-x-6 gap-y-1.5 text-[13px] sm:grid-cols-[max-content_1fr]">
-                  <dt className="font-semibold text-slate-400">Proprietor</dt>
-                  <dd className="font-semibold text-brand-900">Omkaram Sathwik Raju</dd>
-                  <dt className="font-semibold text-slate-400">Entity</dt>
-                  <dd className="font-semibold text-brand-900">{COMPANY.name} — Proprietorship</dd>
-                  <dt className="font-semibold text-slate-400">GSTIN</dt>
-                  <dd className="font-semibold text-brand-900">{COMPANY.gstin}</dd>
-                  <dt className="font-semibold text-slate-400">Registered</dt>
-                  <dd className="font-semibold text-brand-900">01 Sep 2026 · Telangana</dd>
-                  <dt className="font-semibold text-slate-400">Launch</dt>
-                  <dd className="font-semibold text-brand-900">20 Oct 2026 · Parkal, Hanumakonda</dd>
+            {/* founder spotlight */}
+            <div className="overflow-hidden rounded-2xl bg-brand-950 dot-grid-dark">
+              <div className="relative h-44 overflow-hidden">
+                <img
+                  src={founderImg}
+                  alt="Omkaram Sathwik Raju — Proprietor & Founder"
+                  className="h-full w-full object-cover object-top"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-brand-950/20 to-transparent" />
+              </div>
+              <div className="-mt-10 px-5 pb-5">
+                <div className="inline-block rounded-2xl bg-white p-1.5 shadow-lg">
+                  <img
+                    src={founderImg}
+                    alt="Omkaram Sathwik Raju"
+                    className="h-20 w-20 rounded-xl object-cover object-top"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="mt-3 text-[11px] font-bold tracking-[0.2em] text-accent-400 uppercase">
+                  Proprietor &amp; Founder
+                </p>
+                <h3 className="font-display text-xl font-bold text-white">
+                  Omkaram Sathwik Raju
+                </h3>
+                <p className="mt-2 text-[13px] leading-relaxed text-brand-100/70">
+                  "Sathwik" — a first-generation exporter from Parkal,
+                  Hanumakonda (Telangana), building a trading house on the
+                  Deccan's doorstep: spice mandis to one side, the Hyderabad
+                  pharma corridor to the other.
+                </p>
+                <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 border-t border-white/10 pt-4 text-[12px]">
+                  <dt className="font-semibold text-brand-100/50">Entity</dt>
+                  <dd className="font-semibold text-white">{COMPANY.name} · Proprietorship</dd>
+                  <dt className="font-semibold text-brand-100/50">GSTIN</dt>
+                  <dd className="font-semibold text-white">{COMPANY.gstin}</dd>
+                  <dt className="font-semibold text-brand-100/50">Registered</dt>
+                  <dd className="font-semibold text-white">01 Sep 2026 · Telangana</dd>
+                  <dt className="font-semibold text-brand-100/50">Launch</dt>
+                  <dd className="font-semibold text-white">20 Oct 2026 · Parkal</dd>
                 </dl>
               </div>
             </div>

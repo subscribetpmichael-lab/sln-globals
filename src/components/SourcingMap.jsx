@@ -210,8 +210,8 @@ export default function SourcingMap() {
             </div>
 
             <svg
-              viewBox={`0 0 ${S} ${S}`}
-              className={`mx-auto mt-1 max-w-[440px] select-none pl-2 ${dragging ? "globe-grabbing" : "globe-grab"}`}
+              viewBox="-26 -14 512 492"
+              className={`mx-auto mt-1 w-full max-w-[470px] select-none ${dragging ? "globe-grabbing" : "globe-grab"}`}
               onPointerDown={onPointerDown}
               onPointerMove={onPointerMove}
               onPointerUp={endDrag}

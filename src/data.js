@@ -33,6 +33,7 @@ export const CATEGORIES = [
       {
         name: "Guntur S4 Chillies",
         emoji: "🌶️",
+        art: "chilliS4",
         origin: "Guntur, Andhra Pradesh",
         hs: "0904.21",
         pack: "25 kg PP bags / vacuum bales · powder & flakes on spec",
@@ -42,6 +43,7 @@ export const CATEGORIES = [
       {
         name: "Teja S17 Chillies",
         emoji: "🔥",
+        art: "tejaS17",
         origin: "Khammam & AP border mandis",
         hs: "0904.21",
         pack: "25 kg bales",
@@ -51,6 +53,7 @@ export const CATEGORIES = [
       {
         name: "Turmeric Finger (Nizamabad)",
         emoji: "🟡",
+        art: "turmeric",
         origin: "Nizamabad, Telangana",
         hs: "0910.30",
         pack: "25 kg jute / PP bags · ground 100-mesh powder",
@@ -60,6 +63,7 @@ export const CATEGORIES = [
       {
         name: "Cumin Seeds (VLCG 9911)",
         emoji: "🌱",
+        art: "cumin",
         origin: "Unjha, Gujarat",
         hs: "0909.31",
         pack: "25 kg PP bags",
@@ -78,6 +82,7 @@ export const CATEGORIES = [
       {
         name: "500 ml PET Bottles",
         emoji: "🚰",
+        art: "bottle500",
         origin: "Telangana bottling plants",
         hs: "2201.10",
         pack: "24 × 500 ml shrink-cased cartons, pallet-wrapped",
@@ -87,6 +92,7 @@ export const CATEGORIES = [
       {
         name: "1 L PET Bottles",
         emoji: "🧴",
+        art: "bottle1L",
         origin: "Telangana bottling plants",
         hs: "2201.10",
         pack: "12 × 1 L shrink-cased cartons",
@@ -96,6 +102,7 @@ export const CATEGORIES = [
       {
         name: "20 L Bulk Jars",
         emoji: "🫙",
+        art: "jar20L",
         origin: "Telangana bottling plants",
         hs: "2201.10",
         pack: "20 L food-grade jars, wrap-protected on pallets",
@@ -114,6 +121,7 @@ export const CATEGORIES = [
       {
         name: "Generic Formulations",
         emoji: "💊",
+        art: "tablets",
         origin: "Hyderabad Pharma City partners",
         hs: "3004.90",
         pack: "Alu-packs and bottles in defenced secondary cartons · cold-chain where required",
@@ -123,6 +131,7 @@ export const CATEGORIES = [
       {
         name: "APIs & Key Intermediates",
         emoji: "⚗️",
+        art: "apis",
         origin: "Hyderabad / Telangana units",
         hs: "2941 / 2942 series",
         pack: "25 kg fibre drums with liner",
@@ -132,6 +141,7 @@ export const CATEGORIES = [
       {
         name: "Nutraceuticals",
         emoji: "🧬",
+        art: "nutra",
         origin: "Partner sites, Telangana",
         hs: "2106.90",
         pack: "Bottles, strips and sachets; bulk formats to packers",

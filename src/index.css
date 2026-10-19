@@ -26,6 +26,11 @@
   html {
     scroll-behavior: smooth;
   }
+  /* kill sideways page-pan on phones, whatever pokes out */
+  html,
+  body {
+    overflow-x: clip;
+  }
   body {
     @apply bg-white font-body text-brand-950 antialiased;
   }

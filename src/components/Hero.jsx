@@ -21,8 +21,8 @@ export default function Hero() {
           <span className="eyebrow-dark">Welcome</span>
           <h1 className="mt-6 font-display text-4xl leading-[1.08] font-extrabold tracking-tight text-white sm:text-5xl xl:text-[3.4rem]">
             {COMPANY.name}
-            <span className="block text-accent-400">
-              Foreign&nbsp;Export&nbsp;House
+            <span className="mt-2 block text-accent-400">
+              Foreign Export House
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-brand-100/80">

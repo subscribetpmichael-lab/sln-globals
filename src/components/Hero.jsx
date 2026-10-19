@@ -2,21 +2,9 @@ import { COMPANY, STATS } from "../data";
 import PHOTOS from "../photos";
 
 const SHOWCASE = [
-  {
-    photo: PHOTOS.chilli,
-    label: "Chillies",
-    blurb: "Guntur S4, 35,000–40,000 SHU, ASTA 80+ lots",
-  },
-  {
-    photo: PHOTOS.waterbottle,
-    label: "Packaged Drinking Water",
-    blurb: "Ozonated, private-label PET bottles & jars",
-  },
-  {
-    photo: PHOTOS.medicine,
-    label: "Pharmaceuticals",
-    blurb: "WHO-GMP formulations from Hyderabad partners",
-  },
+  { photo: PHOTOS.chilli, label: "Chillies" },
+  { photo: PHOTOS.waterbottle, label: "Packaged Drinking Water" },
+  { photo: PHOTOS.medicine, label: "Pharmaceuticals" },
 ];
 
 export default function Hero() {
@@ -30,35 +18,20 @@ export default function Hero() {
       <div className="container-x relative grid items-center gap-14 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
         {/* left copy */}
         <div>
-          <span className="eyebrow-dark">🇮🇳 Welcome — Spices · Water · Pharma · Parkal, Telangana</span>
+          <span className="eyebrow-dark">Welcome</span>
           <h1 className="mt-6 font-display text-4xl leading-[1.08] font-extrabold tracking-tight text-white sm:text-5xl xl:text-[3.4rem]">
-            From Indian Origins<br />
-            to{" "}
-            <span className="relative inline-block text-accent-400">
-              Global Markets
-              <svg
-                className="absolute -bottom-2 left-0 w-full"
-                viewBox="0 0 220 12"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M3 9c40-6 120-8 214-3"
-                  stroke="#f59e0b"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  opacity="0.65"
-                />
-              </svg>
+            {COMPANY.name}
+            <span className="block text-accent-400">
+              Foreign&nbsp;Export&nbsp;House
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-brand-100/80">
-            {COMPANY.tagline} Launching commercially on{" "}
-            <span className="font-semibold text-accent-300">20 October 2026</span>,
-            we export Indian spices (chilli, turmeric and more), packaged
-            drinking water and pharmaceutical products from the Deccan
-            corridor — with compliance-first documentation and honest lead
-            times for buyers in 40+ target markets.
+            Exporting Indian <strong className="font-semibold text-brand-100">spices</strong>,{" "}
+            <strong className="font-semibold text-brand-100">packaged drinking water</strong>{" "}
+            and <strong className="font-semibold text-brand-100">pharmaceuticals</strong> to
+            the world — launching commercially on{" "}
+            <span className="font-semibold text-accent-300">20 October 2026</span>{" "}
+            with compliance-first documentation and honest lead times.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -78,9 +51,9 @@ export default function Hero() {
           {/* mini stat chips */}
           <div className="mt-10 flex flex-wrap gap-3">
             {[
-              "GSTIN 36OIFPS8030B1Z2",
-              "Spices · Water · Pharma",
+              `GSTIN ${COMPANY.gstin}`,
               "IEC approved",
+              "WHO-GMP partner plants",
             ].map((t) => (
               <span
                 key={t}
@@ -92,21 +65,27 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* right visual — product showcase (photo preview card) */}
+        {/* right visual — shipping photo + what we export */}
         <div className="relative mx-auto w-full max-w-[520px]">
-          <div className="anim-float rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl backdrop-blur-sm">
-            <div className="flex items-center justify-between">
-              <span className="text-[11px] font-semibold tracking-[0.2em] text-brand-100/60 uppercase">
-                What we export
-              </span>
-              <span className="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-300">
-                <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-                Launch-ready
+          <div className="anim-float overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] shadow-2xl backdrop-blur-sm">
+            <div className="relative">
+              <img
+                src={PHOTOS.shipping}
+                alt="Container ship being loaded — SLN GLOBALS export sailings"
+                className="h-52 w-full object-cover sm:h-60"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-transparent to-transparent" />
+              <span className="absolute bottom-3 left-4 rounded-full bg-brand-950/70 px-3 py-1.5 text-[11px] font-semibold text-accent-300 ring-1 ring-white/15 backdrop-blur">
+                Sea, air &amp; land — FCL · LCL · air freight
               </span>
             </div>
 
-            {/* product photo rows */}
-            <div className="mt-4 grid gap-3">
+            {/* what we export — photo rows */}
+            <div className="grid gap-3 p-5">
+              <span className="text-[11px] font-semibold tracking-[0.2em] text-brand-100/60 uppercase">
+                What we export
+              </span>
               {SHOWCASE.map((s) => (
                 <div
                   key={s.label}
@@ -118,32 +97,7 @@ export default function Hero() {
                     className="h-14 w-20 shrink-0 rounded-xl object-cover"
                     loading="lazy"
                   />
-                  <div className="min-w-0">
-                    <p className="text-[13.5px] font-bold text-white">{s.label}</p>
-                    <p className="truncate text-[12px] text-brand-100/60">
-                      {s.blurb}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* ticker rows */}
-            <div className="mt-2 grid gap-2 border-t border-white/10 pt-4 text-[12.5px]">
-              {[
-                ["🌶️", "Chilli S4 lots, first bookings open", "Jebel Ali — 5–7 days"],
-                ["🟡", "Turmeric program lots", "Southeast Asia — 12–15 days"],
-                ["💧", "Bottled-water pallets (private label)", "GCC retail — sea & air"],
-              ].map(([i, a, b]) => (
-                <div
-                  key={a}
-                  className="flex items-center justify-between gap-3 rounded-lg bg-white/[0.03] px-3 py-2"
-                >
-                  <span className="flex items-center gap-2 font-medium text-brand-100/85">
-                    <span>{i}</span>
-                    {a}
-                  </span>
-                  <span className="shrink-0 font-semibold text-accent-300">{b}</span>
+                  <p className="text-[13.5px] font-bold text-white">{s.label}</p>
                 </div>
               ))}
             </div>

@@ -57,35 +57,26 @@ export default function About() {
           <div>
             {/* founder spotlight */}
             <div className="overflow-hidden rounded-2xl bg-brand-950 dot-grid-dark">
-              <div className="relative h-44 overflow-hidden">
+              {/* full photo, never cropped */}
+              <div className="bg-white">
                 <img
                   src={founderImg}
                   alt="Omkaram Sathwik Raju — Proprietor & Founder"
-                  className="h-full w-full object-cover object-top"
+                  className="mx-auto max-w-[420px] w-full"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-brand-950/20 to-transparent" />
               </div>
-              <div className="-mt-10 px-5 pb-5">
-                <div className="inline-block rounded-2xl bg-white p-1.5 shadow-lg">
-                  <img
-                    src={founderImg}
-                    alt="Omkaram Sathwik Raju"
-                    className="h-20 w-20 rounded-xl object-cover object-top"
-                    loading="lazy"
-                  />
-                </div>
-                <p className="mt-3 text-[11px] font-bold tracking-[0.2em] text-accent-400 uppercase">
+              <div className="px-5 py-5">
+                <p className="text-[11px] font-bold tracking-[0.2em] text-accent-400 uppercase">
                   Proprietor &amp; Founder
                 </p>
-                <h3 className="font-display text-xl font-bold text-white">
+                <h3 className="mt-1 font-display text-xl font-bold text-white">
                   Omkaram Sathwik Raju
                 </h3>
                 <p className="mt-2 text-[13px] leading-relaxed text-brand-100/70">
-                  "Sathwik" — a first-generation exporter from Parkal,
-                  Hanumakonda (Telangana), building a trading house on the
-                  Deccan's doorstep: spice mandis to one side, the Hyderabad
-                  pharma corridor to the other.
+                  "Sathwik" — a first-generation exporter building a trading
+                  house on the Deccan's doorstep: the spice mandis to one side,
+                  the pharma corridor to the other.
                 </p>
                 <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 border-t border-white/10 pt-4 text-[12px]">
                   <dt className="font-semibold text-brand-100/50">Entity</dt>

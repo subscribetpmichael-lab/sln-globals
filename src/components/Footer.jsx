@@ -1,4 +1,5 @@
 import { COMPANY, NAV_LINKS, CATEGORIES } from "../data";
+import logoImg from "../assets/logo.png";
 
 export default function Footer() {
   return (
@@ -7,14 +8,11 @@ export default function Footer() {
         <div className="grid gap-10 border-b border-white/10 pb-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* brand */}
           <div>
-            <div className="flex items-center gap-2.5">
-              <span className="grid h-9 w-9 place-items-center rounded-xl bg-accent-500 text-lg">🚢</span>
-              <span className="font-display text-lg font-extrabold text-white">
-                {COMPANY.name.split(" ")[0]}
-                <span className="text-accent-400">.</span>
-                <span className="text-brand-200">{COMPANY.name.split(" ")[1]}</span>
-              </span>
-            </div>
+            <img
+              src={logoImg}
+              alt="SLN GLOBALS logo"
+              className="h-12 w-auto drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
+            />
             <p className="mt-4 text-[13px] leading-relaxed text-brand-100/60">
               Spices · Water · Pharma — from Telangana's Deccan corridor,
               connecting origin mandis and partner plants with importers

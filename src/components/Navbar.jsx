@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { COMPANY, NAV_LINKS } from "../data";
+import logoImg from "../assets/logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -39,15 +40,12 @@ export default function Navbar() {
       }`}
     >
       <nav className="container-x flex h-16 items-center justify-between gap-4">
-        <a href="#home" className="flex items-center gap-2.5">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-accent-500 text-lg shadow-md shadow-accent-500/30">
-            🚢
-          </span>
-          <span className="font-display text-lg font-extrabold tracking-tight text-white">
-            {COMPANY.name.split(" ")[0]}
-            <span className="text-accent-400">.</span>
-            <span className="text-brand-200">{COMPANY.name.split(" ")[1]}</span>
-          </span>
+        <a href="#home" className="flex items-center">
+          <img
+            src={logoImg}
+            alt="SLN GLOBALS logo"
+            className="h-11 w-auto"
+          />
         </a>
 
         <ul className="hidden items-center gap-1 lg:flex">

@@ -2,8 +2,8 @@ export const COMPANY = {
   name: "SLN GLOBALS",
   tagline: "Spices · Packaged Water · Pharmaceuticals — from Telangana to the world",
   email: "slnglobals@gmail.com",
-  phone: "+91 98765 43210",
-  whatsapp: "919876543210",
+  phone: "+91 91107 94866",
+  whatsapp: "919110794866",
   address:
     "7-7-J 0001, J Komuraiah to Velumawada Cross, Parkal, Hanumakonda District, Telangana 506164, India",
   gstin: "36OIFPS8030B1Z2",
@@ -14,7 +14,7 @@ export const COMPANY = {
 export const NAV_LINKS = [
   { href: "#home", label: "Home" },
   { href: "#products", label: "Products" },
-  { href: "#process", label: "Process" },
+  { href: "#strengths", label: "Strengths" },
   { href: "#certificates", label: "Certificates" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },

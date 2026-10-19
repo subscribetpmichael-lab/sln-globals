@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: tradebridge-exim
+    container_name: tradebridge-exim
+    ports:
+      - "8080:8080"
+    restart: unless-stopped

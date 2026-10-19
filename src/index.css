@@ -110,5 +110,13 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
+/* slow spin for hero starburst */
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
 .anim-float { animation: float-y 6s ease-in-out infinite; }
 .anim-fade-up { animation: fade-up 0.7s ease both; }

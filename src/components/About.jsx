@@ -16,11 +16,9 @@ export default function About() {
               <strong className="text-brand-950">{COMPANY.name}</strong> is a
               proprietorship trading house founded by{" "}
               <strong className="text-brand-950">Omkaram Sathwik Raju</strong>{" "}
-              ("Sathwik"), opening for commercial trade on{" "}
-              <strong className="text-brand-950">20 October 2026</strong> from
-              Parkal in Hanumakonda district, Telangana — a short drive from
-              India's chilli and turmeric mandis and the Hyderabad pharma
-              corridor.
+              ("Sathwik"), operating from Parkal in Hanumakonda district,
+              Telangana — a short drive from India's spice mandis and the
+              pharma corridor.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-slate-600">
               We deliberately narrow our field to three verticals where our

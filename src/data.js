@@ -7,7 +7,6 @@ export const COMPANY = {
   address:
     "7-7-J 0001, J Komuraiah to Velumawada Cross, Parkal, Hanumakonda District, Telangana 506164, India",
   gstin: "36OIFPS8030B1Z2",
-  launchDate: "20 October 2026",
   proprietor: "Omkaram Sathwik Raju",
   hours: "Mon–Sat · 9:30 AM – 7:00 PM IST",
 };

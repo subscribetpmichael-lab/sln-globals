@@ -15,9 +15,9 @@ export const COMPANY = {
 export const NAV_LINKS = [
   { href: "#home", label: "Home" },
   { href: "#products", label: "Products" },
-  { href: "#about", label: "About" },
   { href: "#process", label: "Process" },
   { href: "#certificates", label: "Certificates" },
+  { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -195,7 +195,6 @@ export const HUB = { label: "Nhava Sheva Gateway", geo: [72.95, 18.95] };
 export const HUB_GEO_REF = HUB.geo;
 
 export const STATS = [
-  { value: "20 Oct 2026", label: "Commercial launch date" },
   { value: "3", label: "Focused product verticals" },
   { value: "GST", label: "Registered trade entity" },
   { value: "40+", label: "Export markets on roadmap" },

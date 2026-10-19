@@ -29,9 +29,8 @@ export default function Hero() {
             Exporting Indian <strong className="font-semibold text-brand-100">spices</strong>,{" "}
             <strong className="font-semibold text-brand-100">packaged drinking water</strong>{" "}
             and <strong className="font-semibold text-brand-100">pharmaceuticals</strong> to
-            the world — launching commercially on{" "}
-            <span className="font-semibold text-accent-300">20 October 2026</span>{" "}
-            with compliance-first documentation and honest lead times.
+            the world — with compliance-first documentation and honest lead
+            times.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -105,15 +104,15 @@ export default function Hero() {
 
           {/* floating badge */}
           <div className="absolute -bottom-5 -left-4 rounded-2xl border border-white/10 bg-brand-900 px-4 py-3 shadow-xl sm:-left-8">
-            <p className="font-display text-2xl font-extrabold text-accent-400">20 Oct</p>
-            <p className="text-[11px] font-medium text-brand-100/70">Commercial launch, 2026</p>
+            <p className="font-display text-2xl font-extrabold text-accent-400">SG</p>
+            <p className="text-[11px] font-medium text-brand-100/70">Foreign Export House</p>
           </div>
         </div>
       </div>
 
       {/* stats strip */}
       <div className="relative border-t border-white/10 bg-brand-950/60">
-        <div className="container-x grid grid-cols-2 gap-6 py-8 sm:grid-cols-4">
+        <div className="container-x grid grid-cols-3 gap-6 py-8">
           {STATS.map((s) => (
             <div key={s.label} className="text-center sm:text-left">
               <p className="font-display text-3xl font-extrabold text-white">

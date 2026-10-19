@@ -10,6 +10,18 @@ const SHOWCASE = [
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-brand-950 pt-16">
+      {/* full-bleed shipping photo background */}
+      <div className="absolute inset-0">
+        <img
+          src={PHOTOS.shipping}
+          alt=""
+          aria-hidden="true"
+          className="h-full w-full object-cover"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-950/90 via-brand-950/85 to-brand-950/95" />
+      </div>
+
       {/* backdrop layers */}
       <div className="dot-grid-dark absolute inset-0" />
       <div className="pointer-events-none absolute -top-40 left-1/2 h-[480px] w-[820px] -translate-x-1/2 rounded-full bg-brand-600/30 blur-[120px]" />
@@ -102,11 +114,11 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* floating badge */}
-          <div className="absolute -bottom-5 -left-4 rounded-2xl border border-white/10 bg-brand-900 px-4 py-3 shadow-xl sm:-left-8">
+          {/* floating badge — commented out for now */}
+          {/* <div className="absolute -bottom-5 -left-4 rounded-2xl border border-white/10 bg-brand-900 px-4 py-3 shadow-xl sm:-left-8">
             <p className="font-display text-2xl font-extrabold text-accent-400">SG</p>
             <p className="text-[11px] font-medium text-brand-100/70">Foreign Export House</p>
-          </div>
+          </div> */}
         </div>
       </div>
 

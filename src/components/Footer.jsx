@@ -11,7 +11,7 @@ export default function Footer() {
             <img
               src={logoImg}
               alt="SLN GLOBALS logo"
-              className="h-12 w-auto drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
+              className="h-12 w-auto rounded-xl"
             />
             <p className="mt-4 text-[13px] leading-relaxed text-brand-100/60">
               Spices · Water · Pharma — from Telangana's Deccan corridor,

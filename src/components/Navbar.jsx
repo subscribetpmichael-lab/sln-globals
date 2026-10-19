@@ -44,7 +44,7 @@ export default function Navbar() {
           <img
             src={logoImg}
             alt="SLN GLOBALS logo"
-            className="h-11 w-auto"
+            className="h-11 w-auto rounded-xl"
           />
         </a>
 

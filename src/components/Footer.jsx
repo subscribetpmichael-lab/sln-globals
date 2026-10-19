@@ -21,7 +21,7 @@ export default function Footer() {
               across the Gulf, Europe, North America and Southeast Asia.
             </p>
             <div className="mt-5 flex flex-wrap gap-1.5">
-              {["GST Registered", "IEC · approved", "FSSAI · in process", "WHO-GMP partners"].map((t) => (
+              {["GST Registered", "IEC · approved", "WHO-GMP partners"].map((t) => (
                 <span key={t} className="rounded-md bg-white/5 px-2 py-1 text-[10px] font-bold tracking-wider text-brand-100/70 ring-1 ring-white/10">
                   {t}
                 </span>
@@ -88,7 +88,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {COMPANY.name} (Proprietorship ·
             Telangana). All rights reserved.
           </p>
-          <p>GSTIN {COMPANY.gstin} · IEC approved · FSSAI in process</p>
+          <p>GSTIN {COMPANY.gstin} · IEC approved</p>
         </div>
       </div>
     </footer>

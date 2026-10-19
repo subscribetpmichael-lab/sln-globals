@@ -1,5 +1,5 @@
 import { CATEGORIES } from "../data";
-import ProductArt from "./ProductArt";
+import PHOTOS from "../photos";
 
 const SPEC_KEYS = [
   { key: "origin", label: "Origin", icon: "📍" },
@@ -82,13 +82,15 @@ export default function Products() {
                   key={p.name}
                   className="card group flex flex-col overflow-hidden transition hover:-translate-y-1 hover:shadow-lg"
                 >
-                  {/* illustrated header */}
-                  <div className="relative">
-                    <ProductArt
-                      art={p.art}
-                      category={cat.id}
-                      className="transition duration-300 group-hover:scale-[1.03]"
+                  {/* photo header */}
+                  <div className="relative h-44 overflow-hidden">
+                    <img
+                      src={PHOTOS[p.photo]}
+                      alt={p.name}
+                      className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                      loading="lazy"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
                     <span className="absolute top-3 left-3 grid h-9 w-9 place-items-center rounded-xl bg-white/90 text-lg shadow-sm backdrop-blur">
                       {p.emoji}
                     </span>
@@ -144,7 +146,7 @@ export default function Products() {
             href="#sourcing"
             className="font-semibold text-brand-600 underline decoration-accent-400 underline-offset-2"
           >
-            chilli, turmeric, cumin &amp; pepper mandis
+            chilli &amp; turmeric mandis
           </a>{" "}
           of Telangana, AP, Gujarat and Kerala — or send us your spec sheet.
         </p>

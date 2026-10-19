@@ -34,7 +34,8 @@ export default function About() {
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-slate-600">
               We begin as a small, disciplined operation — GST-registered from
-              September 2026, with IEC and FSSAI licences tracked to grant.
+              September 2026, with the IEC approved and the FSSAI licence
+              tracked to grant.
               What we can promise today is backed by paper; what needs time is
               stated honestly rather than glossed over.
             </p>

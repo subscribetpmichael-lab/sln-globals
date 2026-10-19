@@ -1,4 +1,23 @@
 import { COMPANY, STATS } from "../data";
+import PHOTOS from "../photos";
+
+const SHOWCASE = [
+  {
+    photo: PHOTOS.chilli,
+    label: "Chillies",
+    blurb: "Guntur S4, 35,000–40,000 SHU, ASTA 80+ lots",
+  },
+  {
+    photo: PHOTOS.waterbottle,
+    label: "Packaged Drinking Water",
+    blurb: "Ozonated, private-label PET bottles & jars",
+  },
+  {
+    photo: PHOTOS.medicine,
+    label: "Pharmaceuticals",
+    blurb: "WHO-GMP formulations from Hyderabad partners",
+  },
+];
 
 export default function Hero() {
   return (
@@ -11,7 +30,7 @@ export default function Hero() {
       <div className="container-x relative grid items-center gap-14 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
         {/* left copy */}
         <div>
-          <span className="eyebrow-dark">🇮🇳 Spices · Water · Pharma — Parkal, Telangana</span>
+          <span className="eyebrow-dark">🇮🇳 Welcome — Spices · Water · Pharma · Parkal, Telangana</span>
           <h1 className="mt-6 font-display text-4xl leading-[1.08] font-extrabold tracking-tight text-white sm:text-5xl xl:text-[3.4rem]">
             From Indian Origins<br />
             to{" "}
@@ -43,11 +62,16 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <a href="#contact" className="btn-primary">
-              Request a Quote →
+            <a
+              href={`https://wa.me/${COMPANY.whatsapp}`}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-primary"
+            >
+              💬 Chat with us →
             </a>
-            <a href="#sourcing" className="btn-outline-dark">
-              🗺️ Explore Sourcing Map
+            <a href="#products" className="btn-outline-dark">
+              📦 Explore Products
             </a>
           </div>
 
@@ -56,7 +80,7 @@ export default function Hero() {
             {[
               "GSTIN 36OIFPS8030B1Z2",
               "Spices · Water · Pharma",
-              "IEC in process",
+              "IEC approved",
             ].map((t) => (
               <span
                 key={t}
@@ -68,53 +92,41 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* right visual — stylised globe card */}
+        {/* right visual — product showcase (photo preview card) */}
         <div className="relative mx-auto w-full max-w-[520px]">
           <div className="anim-float rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl backdrop-blur-sm">
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-semibold tracking-[0.2em] text-brand-100/60 uppercase">
-                Live trade routes
+                What we export
               </span>
               <span className="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-300">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-                Gateway active
+                Launch-ready
               </span>
             </div>
 
-            <svg viewBox="0 0 400 300" className="mt-2 w-full">
-              {/* dotted globe */}
-              {Array.from({ length: 11 }).map((_, r) =>
-                Array.from({ length: 16 }).map((_, c) => {
-                  const dx = c - 7.5;
-                  const dy = r - 5;
-                  const d = Math.sqrt(dx * dx + dy * dy);
-                  if (d > 5.4) return null;
-                  return (
-                    <circle
-                      key={`${r}-${c}`}
-                      cx={40 + c * 22}
-                      cy={55 + r * 22}
-                      r={d > 4.6 ? 1 : 1.7}
-                      fill={d > 4.6 ? "rgba(148,190,235,0.25)" : "rgba(148,190,235,0.55)"}
-                    />
-                  );
-                })
-              )}
-              {/* hub + routes */}
-              <g>
-                <circle cx="120" cy="170" r="6" fill="#f59e0b" />
-                <circle cx="120" cy="170" r="12" fill="#f59e0b" opacity="0.25" />
-                <path d="M120 170 Q 200 90 300 120" stroke="#5484bd" strokeWidth="1.6" fill="none" strokeDasharray="5 6" />
-                <path d="M120 170 Q 210 150 310 205" stroke="#5484bd" strokeWidth="1.6" fill="none" strokeDasharray="5 6" />
-                <path d="M120 170 Q 190 230 290 260" stroke="#5484bd" strokeWidth="1.6" fill="none" strokeDasharray="5 6" />
-                <circle cx="300" cy="120" r="4" fill="#34d399" />
-                <circle cx="310" cy="205" r="4" fill="#34d399" />
-                <circle cx="290" cy="260" r="4" fill="#34d399" />
-                <text x="304" y="112" fontSize="13" fill="#fff">🇺🇸</text>
-                <text x="314" y="200" fontSize="13" fill="#fff">🇦🇪</text>
-                <text x="294" y="256" fontSize="13" fill="#fff">🇦🇺</text>
-              </g>
-            </svg>
+            {/* product photo rows */}
+            <div className="mt-4 grid gap-3">
+              {SHOWCASE.map((s) => (
+                <div
+                  key={s.label}
+                  className="flex items-center gap-3.5 rounded-2xl bg-white/[0.04] p-3 ring-1 ring-white/10 transition hover:bg-white/[0.07]"
+                >
+                  <img
+                    src={s.photo}
+                    alt={s.label}
+                    className="h-14 w-20 shrink-0 rounded-xl object-cover"
+                    loading="lazy"
+                  />
+                  <div className="min-w-0">
+                    <p className="text-[13.5px] font-bold text-white">{s.label}</p>
+                    <p className="truncate text-[12px] text-brand-100/60">
+                      {s.blurb}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
 
             {/* ticker rows */}
             <div className="mt-2 grid gap-2 border-t border-white/10 pt-4 text-[12.5px]">

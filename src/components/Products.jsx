@@ -128,27 +128,27 @@ export default function Products() {
 
             {/* closing line per vertical */}
             <p className="mt-4 text-center text-[12.5px] text-slate-500">
-              Request a full spec sheet, samples or FOB pricing for this
-              vertical →{" "}
+              Spec sheets, samples and packing details for this vertical are
+              available on request →{" "}
               <a
                 href="#contact"
                 className="font-semibold text-brand-600 underline decoration-accent-400 underline-offset-2"
               >
-                enquire
+                talk to the trade desk
               </a>
             </p>
           </div>
         ))}
 
         <p className="mt-10 text-center text-[13px] text-slate-500">
-          Need a spec not listed here? Sourced from the{" "}
+          Need a spec not listed here? Everything is sourced from the{" "}
           <a
-            href="#sourcing"
+            href="#about"
             className="font-semibold text-brand-600 underline decoration-accent-400 underline-offset-2"
           >
             chilli &amp; turmeric mandis
           </a>{" "}
-          of Telangana, AP, Gujarat and Kerala — or send us your spec sheet.
+          of the Telangana–Andhra belt — or simply send us your spec sheet.
         </p>
       </div>
     </section>

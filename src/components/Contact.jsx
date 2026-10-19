@@ -48,8 +48,8 @@ export default function Contact() {
             <h2 className="section-title">Let's draft your first container</h2>
             <p className="mt-4 max-w-md text-[15px] leading-relaxed text-slate-600">
               Share your target grade, quantity and destination country — the
-              trade desk replies within one working day with availability,
-              indicative pricing and sample logistics.
+              trade desk replies within one working day with availability and
+              sample logistics.
             </p>
 
             <div className="mt-8 grid gap-3">
@@ -92,7 +92,7 @@ export default function Contact() {
           {/* right: form */}
           <form onSubmit={submit} className="card bg-brand-950 p-6 sm:p-8 dot-grid-dark">
             <h3 className="font-display text-lg font-extrabold text-white">
-              Request a quotation
+              Send an enquiry
             </h3>
             <p className="mt-1 text-[13px] text-brand-100/60">
               Fields marked * are required. Replies in ≤ 24 working hours.
@@ -130,8 +130,8 @@ export default function Contact() {
               )}
             </div>
             <p className="mt-4 text-[11px] leading-relaxed text-brand-100/40">
-              Your details are used for this quotation only — never shared with
-              third parties.
+              Your details are used for replying to this enquiry only — never
+              shared with third parties.
             </p>
           </form>
         </div>

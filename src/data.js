@@ -16,7 +16,6 @@ export const NAV_LINKS = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#products", label: "Products" },
-  { href: "#sourcing", label: "Sourcing Globe" },
   { href: "#process", label: "Process" },
   { href: "#certificates", label: "Certificates" },
   { href: "#contact", label: "Contact" },
@@ -211,7 +210,7 @@ export const WHY_US = [
   {
     icon: "🧾",
     title: "Compliance-First Paperwork",
-    desc: "GST-registered from day one, with IEC and FSSAI tracked project-style. Invoices, permits and lab reports are filed before your shipment moves — not after.",
+    desc: "GST-registered from day one, IEC approved, with FSSAI moving through the same disciplined checklist. Invoices, permits and lab reports are filed before your shipment moves — not after.",
   },
   {
     icon: "🎯",
@@ -239,8 +238,8 @@ export const PROCESS = [
   },
   {
     step: "02",
-    title: "Samples & Quotation",
-    desc: "Courier samples for your organoleptic or lab checks, then final FOB / CFR / CIF quotes with incoterms, packing and payment terms (LC, TT, escrow).",
+    title: "Samples & Pricing",
+    desc: "Courier samples for your organoleptic or lab checks, then final FOB / CFR / CIF pricing with incoterms, packing and payment terms (LC, TT, escrow).",
     icon: "🧾",
   },
   {
@@ -289,9 +288,9 @@ export const CERTIFICATES = [
     emoji: "🔐",
     authority: "Directorate General of Foreign Trade, Ministry of Commerce",
     scope:
-      "The PAN-based 10-digit licence that authorises any Indian entity to legally import and export. Application filed and in progress — the next certificate this business earns.",
+      "The PAN-based 10-digit licence that authorises any Indian entity to legally import and export. Granted by DGFT — SLN GLOBALS is approved and free to trade internationally. The certificate document is added to this page upon receipt of the original.",
     color: "#1d4ed8",
-    status: "in-progress",
+    status: "approved",
   },
   {
     id: "fssai",
@@ -318,4 +317,4 @@ export const CERTIFICATES = [
 ];
 
 export const CERT_NOTE =
-  "The GST certificate is shown exactly as issued by the Government of India. IEC and FSSAI licences are published here as each one is granted — interim status available on request.";
+  "The GST certificate is shown exactly as issued by the Government of India. The IEC is approved by DGFT and its document is published here with the next site update; the FSSAI licence follows the day it is granted.";

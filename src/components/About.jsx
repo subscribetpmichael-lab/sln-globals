@@ -85,8 +85,8 @@ export default function About() {
                   <dd className="font-semibold text-white">{COMPANY.gstin}</dd>
                   <dt className="font-semibold text-brand-100/50">Registered</dt>
                   <dd className="font-semibold text-white">01 Sep 2026 · Telangana</dd>
-                  <dt className="font-semibold text-brand-100/50">Launch</dt>
-                  <dd className="font-semibold text-white">20 Oct 2026 · Parkal</dd>
+                  <dt className="font-semibold text-brand-100/50">Office</dt>
+                  <dd className="font-semibold text-white">Parkal, Hanumakonda</dd>
                 </dl>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { COMPANY, NAV_LINKS } from "../data";
-import logoImg from "../assets/logo.png";
+import logoImg from "../assets/logo2.jpeg";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

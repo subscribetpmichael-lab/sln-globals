@@ -79,25 +79,28 @@ export const CATEGORIES = [
       },
     ],
   },
-  {
-    id: "pharma",
-    label: "Pharmaceuticals",
-    emoji: "💊",
-    blurb: "Formulations, APIs and nutraceuticals supplied through WHO-GMP certified partner plants with batch-level documentation.",
-    tag: "WHO-GMP partner units",
-    items: [
-      {
-        id: "medicine",
-        name: "Pharmaceutical Formulations",
-        photo: "medicine",
-        emoji: "💊",
-        hs: "3004.90",
-        pack: "Alu-packs and bottles in defenced secondary cartons · cold-chain where required",
-        moq: "From 1 pallet",
-        desc: "Tablets, capsules and syrups from WHO-GMP certified plants — batch-level documentation on every consignment.",
-      },
-    ],
-  },
+  /* ---- Pharmaceutical Formulations temporarily hidden from products ----
+     Uncomment this category to bring pharma back into
+     Our Products, the contact form and the footer. */
+  // {
+  //   id: "pharma",
+  //   label: "Pharmaceuticals",
+  //   emoji: "💊",
+  //   blurb: "Formulations, APIs and nutraceuticals supplied through WHO-GMP certified partner plants with batch-level documentation.",
+  //   tag: "WHO-GMP partner units",
+  //   items: [
+  //     {
+  //       id: "medicine",
+  //       name: "Pharmaceutical Formulations",
+  //       photo: "medicine",
+  //       emoji: "💊",
+  //       hs: "3004.90",
+  //       pack: "Alu-packs and bottles in defenced secondary cartons · cold-chain where required",
+  //       moq: "From 1 pallet",
+  //       desc: "Tablets, capsules and syrups from WHO-GMP certified plants — batch-level documentation on every consignment.",
+  //     },
+  //   ],
+  // },
 ];
 
 export const ORIGINS = [
@@ -285,29 +288,34 @@ export const CERTIFICATES = [
     color: "#1d4ed8",
     status: "approved",
   },
-  {
-    id: "fssai",
-    name: "FSSAI Licence",
-    code: "Food Safety Registration",
-    emoji: "🛡️",
-    authority: "Food Safety & Standards Authority of India",
-    scope:
-      "Food Business Operator licence for hygienic spice handling and packaged-drinking-water export. Filing in process — required before the first food consignment clears.",
-    color: "#0d9488",
-    status: "in-progress",
-  },
-  {
-    id: "gmp",
-    name: "WHO-GMP Compliance",
-    code: "Pharma Partner Credentials",
-    emoji: "💊",
-    authority: "Partner plants certified by CDSCO-accredited inspectors",
-    scope:
-      "Our pharmaceutical lines are supplied exclusively through WHO-GMP certified partner plants, with COA, batch-release and stability documentation provided per consignment.",
-    color: "#7c3aed",
-    status: "partner",
-  },
+  /* ---- Temporarily hidden from Licenses & Registrations ----
+     Uncomment to bring the FSSAI licence and WHO-GMP compliance
+     cards back onto the Certificates section. */
+  // {
+  //   id: "fssai",
+  //   name: "FSSAI Licence",
+  //   code: "Food Safety Registration",
+  //   emoji: "🛡️",
+  //   authority: "Food Safety & Standards Authority of India",
+  //   scope:
+  //     "Food Business Operator licence for hygienic spice handling and packaged-drinking-water export. Filing in process — required before the first food consignment clears.",
+  //   color: "#0d9488",
+  //   status: "in-progress",
+  // },
+  // {
+  //   id: "gmp",
+  //   name: "WHO-GMP Compliance",
+  //   code: "Pharma Partner Credentials",
+  //   emoji: "💊",
+  //   authority: "Partner plants certified by CDSCO-accredited inspectors",
+  //   scope:
+  //     "Our pharmaceutical lines are supplied exclusively through WHO-GMP certified partner plants, with COA, batch-release and stability documentation provided per consignment.",
+  //   color: "#7c3aed",
+  //   status: "partner",
+  // },
 ];
 
 export const CERT_NOTE =
-  "The GST certificate is shown exactly as issued by the Government of India. The IEC is approved by DGFT and its document is published here with the next site update; the FSSAI licence follows the day it is granted.";
+  // Restore the FSSAI clause when the FSSAI certificate is uncommented above:
+  // "The GST certificate is shown exactly as issued by the Government of India. The IEC is approved by DGFT and its document is published here with the next site update; the FSSAI licence follows the day it is granted."
+  "The GST certificate is shown exactly as issued by the Government of India. The IEC is approved by DGFT and its document is published here with the next site update.";

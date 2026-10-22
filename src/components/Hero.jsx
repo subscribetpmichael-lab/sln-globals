@@ -35,7 +35,7 @@ export default function Hero() {
 
           <div className="flex flex-col items-start gap-4 lg:flex-row lg:items-end lg:gap-6">
             <h1 className="font-display text-4xl leading-[1.06] font-extrabold tracking-tight text-white sm:text-6xl xl:text-7xl">
-              From Indian Origin to Global Markets
+              From Indian Origin to Global Market
             </h1>
             <a
               href="#products"

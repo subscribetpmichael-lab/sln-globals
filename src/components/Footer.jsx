@@ -1,5 +1,5 @@
 import { COMPANY, NAV_LINKS, CATEGORIES } from "../data";
-import logoImg from "../assets/logo.png";
+import logoImg from "../assets/logo2.jpeg";
 
 export default function Footer() {
   return (

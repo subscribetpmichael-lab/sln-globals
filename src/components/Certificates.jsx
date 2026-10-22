@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { CERTIFICATES, CERT_NOTE } from "../data";
 import gstPdf from "../assets/sln-globals-gst.pdf";
+import iecPdf from "../assets/sln-globals-iec.pdf";
 
-const FILES = { gst: gstPdf };
+const FILES = { gst: gstPdf, iec: iecPdf };
 
 const STATUS_META = {
   issued: {
@@ -54,12 +55,9 @@ export default function Certificates() {
             <p className="mt-4 text-[15px] leading-relaxed text-slate-600">
               A new business must earn its paperwork in full view — so here is
               the complete live status. Click any card for details; the GST
-              certificate opens exactly as issued by the Government of India.
+              and IEC certificates open exactly as issued.
             </p>
           </div>
-          <span className="rounded-full border border-emerald-300 bg-emerald-50 px-4 py-2 text-xs font-bold text-emerald-700">
-            ✓ GST Registered — Sep 2026
-          </span>
         </div>
 
         {/* certificate grid */}
@@ -91,7 +89,7 @@ export default function Certificates() {
                 {c.authority}
               </p>
               <span className="mt-3 inline-flex items-center gap-1.5 text-[12px] font-bold text-accent-600">
-                View {c.status === "issued" ? "certificate" : "status"}
+                View {FILES[c.id] ? "certificate" : "status"}
                 <span className="transition group-hover:translate-x-0.5">→</span>
               </span>
             </button>
@@ -161,7 +159,7 @@ export default function Certificates() {
                 {cert.file ? (
                   <a
                     href={FILES[cert.id]}
-                    download={`SLN-GLOBALS-GST-Certificate.pdf`}
+                    download={`SLN-GLOBALS-${cert.id.toUpperCase()}-Certificate.pdf`}
                     className="btn-primary flex-1 py-2.5 text-[13px]"
                   >
                     ⬇ Download certificate

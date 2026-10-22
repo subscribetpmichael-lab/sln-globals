@@ -42,7 +42,7 @@ export const CATEGORIES = [
         id: "turmeric",
         name: "Turmeric — Fingers & Powder",
         emoji: "🟡",
-        photo: "turmeric",
+        photo: "turmeric4",
         hs: "0910.30",
         pack: "Export packing to specification",
         moq: "5 MT",
@@ -76,6 +76,63 @@ export const CATEGORIES = [
         pack: "Food-grade jars, wrap-protected on pallets",
         moq: "1 × 20ft",
         desc: "High-volume sealed jars with tamper-evident caps — built for kitchens, events and bulk distribution.",
+      },
+    ],
+  },
+  {
+    id: "rice",
+    label: "Basmati Rice",
+    emoji: "🍚",
+    blurb: "Export-grade 1121, 1509 and traditional basmati — raw, steam, sella and parboiled, packed for long transit.",
+    tag: "immature-free, graded lots",
+    items: [
+      {
+        id: "basmati",
+        name: "Basmati Rice — 1121 · 1509",
+        photo: "basmati",
+        emoji: "🍚",
+        hs: "1006.30",
+        pack: "Jute / non-woven / vacuum-pack, 5–50 kg",
+        moq: "5 MT",
+        desc: "Aged, double-poly sorted lots from Punjab–Haryana belts — grain length, purity, moisture and breakage matched to your brief.",
+      },
+    ],
+  },
+  {
+    id: "nonbasmati",
+    label: "Non-Basmati Rice",
+    emoji: "🌾",
+    blurb: "Swarna, IR 64 parboiled, IR 36, Sona Masoori and broken rice — sortex-cleaned lots to buyer specification.",
+    tag: "sortex-cleaned lots",
+    items: [
+      {
+        id: "non-basmati-rice",
+        name: "Non-Basmati Rice — Swarna · IR 64",
+        photo: "nonbasmati",
+        emoji: "🌾",
+        hs: "1006.30",
+        pack: "Jute / non-woven / vacuum-pack, 5–50 kg",
+        moq: "5 MT",
+        desc: "Short to long grain everyday varieties from select farms — raw, steam and parboiled processing matched to your brief.",
+      },
+    ],
+  },
+  {
+    id: "coffee",
+    label: "Coffee",
+    emoji: "☕",
+    blurb: "Green and roasted coffee from South Indian estates — grade, processing and cup profile matched to buyer requirement.",
+    tag: "buyer-defined specs",
+    items: [
+      {
+        id: "coffee",
+        name: "Coffee — Arabica & Robusta",
+        photo: "coffee1",
+        emoji: "☕",
+        hs: "0901.11",
+        pack: "Jute / GrainPro export bags",
+        moq: "5 MT",
+        desc: "Washed and natural grades sourced to your brief — green beans, roasted and ground formats with lot-based quality confirmation.",
       },
     ],
   },
@@ -284,9 +341,10 @@ export const CERTIFICATES = [
     emoji: "🔐",
     authority: "Directorate General of Foreign Trade, Ministry of Commerce",
     scope:
-      "The PAN-based 10-digit licence that authorises any Indian entity to legally import and export. Granted by DGFT — SLN GLOBALS is approved and free to trade internationally. The certificate document is added to this page upon receipt of the original.",
+      "The PAN-based 10-digit licence that authorises any Indian entity to legally import and export. Granted by DGFT — SLN GLOBALS is approved and free to trade internationally. The certificate document is published here exactly as granted.",
     color: "#1d4ed8",
     status: "approved",
+    file: true,
   },
   /* ---- Temporarily hidden from Licenses & Registrations ----
      Uncomment to bring the FSSAI licence and WHO-GMP compliance
@@ -318,4 +376,4 @@ export const CERTIFICATES = [
 export const CERT_NOTE =
   // Restore the FSSAI clause when the FSSAI certificate is uncommented above:
   // "The GST certificate is shown exactly as issued by the Government of India. The IEC is approved by DGFT and its document is published here with the next site update; the FSSAI licence follows the day it is granted."
-  "The GST certificate is shown exactly as issued by the Government of India. The IEC is approved by DGFT and its document is published here with the next site update.";
+  "The GST certificate is shown exactly as issued by the Government of India. The IEC licence is approved by DGFT and its certificate is published here exactly as granted.";

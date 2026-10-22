@@ -1,28 +1,23 @@
 import { COMPANY } from "../data";
-import PHOTOS from "../photos";
-import bannerPort from "../assets/banner-port-web.mp4";
+import heroBackdrop from "../assets/home-background.jpg";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex items-end overflow-hidden bg-black pt-16"
+      className="relative flex items-center overflow-hidden bg-black pt-16 min-h-[80vh] lg:min-h-[90vh]"
     >
-      {/* moving port video background (Pexels — Tom Fisk, free licence) */}
-      <video
-        className="absolute inset-0 h-full w-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster={PHOTOS.shipping}
-      >
-        <source src={bannerPort} type="video/mp4" />
-      </video>
+      {/* port backdrop — photo with a pan/zoom drift for a live-video feel */}
+      <img
+        src={heroBackdrop}
+        alt=""
+        aria-hidden="true"
+        className="hero-drift absolute inset-0 h-full w-full object-cover object-center"
+      />
       <div className="absolute inset-0 bg-black/55" />
 
-      {/* content anchored bottom-left, Globistix-style */}
-      <div className="container-x relative z-10 pb-10 text-left sm:pb-14 lg:pb-20">
+      {/* content centered mid-hero, Globistex-style */}
+      <div className="container-x relative z-10 text-left">
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-3">
             <span className="spin-slow text-lg text-accent-400" aria-hidden="true">

@@ -4,8 +4,14 @@ import PHOTOS from "../photos";
 const CAT_COLOR = {
   spices: { chip: "bg-red-100 text-red-700" },
   water: { chip: "bg-sky-100 text-sky-700" },
+  coffee: { chip: "bg-amber-100 text-amber-800" },
+  rice: { chip: "bg-yellow-100 text-yellow-800" },
+  nonbasmati: { chip: "bg-lime-100 text-lime-800" },
   pharma: { chip: "bg-violet-100 text-violet-700" },
 };
+
+// products with a full sourcing-brief page
+const BRIEF_IDS = new Set(["chilli", "coffee", "basmati", "non-basmati-rice", "turmeric"]);
 
 export default function Products() {
   const items = CATEGORIES.flatMap((c) =>
@@ -25,40 +31,55 @@ export default function Products() {
         </div>
 
         {/* single SVK-style product grid */}
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {items.map((p) => (
-            <article
-              key={p.id}
-              className="card group flex flex-col overflow-hidden transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              {/* photo */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={PHOTOS[p.photo]}
-                  alt={p.name}
-                  className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <span
-                  className={`absolute top-3 left-3 rounded-full px-2.5 py-1 text-[10px] font-bold ring-1 ring-black/5 backdrop-blur ${
-                    CAT_COLOR[p.catId].chip
-                  }`}
-                >
-                  {p.catLabel}
-                </span>
-              </div>
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {items.map((p) => {            const card = (
+              <article
+                key={p.id}
+                className="card group flex h-full flex-col overflow-hidden transition hover:-translate-y-1 hover:shadow-lg"
+              >
+                {/* photo */}
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={PHOTOS[p.photo]}
+                    alt={p.name}
+                    className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <span
+                    className={`absolute top-3 left-3 rounded-full px-2.5 py-1 text-[10px] font-bold ring-1 ring-black/5 backdrop-blur ${
+                      CAT_COLOR[p.catId]?.chip ?? "bg-slate-100 text-slate-700"
+                    }`}
+                  >
+                    {p.catLabel}
+                  </span>
+                </div>
 
-              <div className="flex flex-1 flex-col p-5">
-                <h4 className="text-[15px] font-bold text-brand-950">{p.name}</h4>
-                <p className="mt-2 flex-1 text-[12.5px] leading-relaxed text-slate-600">
-                  {p.desc}
-                </p>
-                <p className="mt-4 border-t border-brand-100 pt-3 text-[11.5px] font-medium text-slate-500">
-                  📦 {p.pack} · ⚖️ MOQ {p.moq}
-                </p>
-              </div>
-            </article>
-          ))}
+                <div className="flex flex-1 flex-col p-5">
+                  <h4 className="text-[15px] font-bold text-brand-950">{p.name}</h4>
+                  <p className="mt-2 flex-1 text-[12.5px] leading-relaxed text-slate-600">
+                    {p.desc}
+                  </p>
+                  <p className="mt-4 border-t border-brand-100 pt-3 text-[11.5px] font-medium text-slate-500">
+                    📦 {p.pack} · ⚖️ MOQ {p.moq}
+                  </p>
+                </div>
+              </article>
+            );
+
+            // products with a full catalogue detail route open from their card
+            return BRIEF_IDS.has(p.id) ? (
+              <a
+                key={p.id}
+                href={`#${p.id}`}
+                aria-label={`Open the full ${p.name} sourcing brief`}
+                className="block h-full cursor-pointer"
+              >
+                {card}
+              </a>
+            ) : (
+              card
+            );
+          })}
         </div>
 
         <p className="mt-10 text-center text-[13px] text-slate-500">

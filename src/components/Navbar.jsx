@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { COMPANY, NAV_LINKS } from "../data";
 import logoImg from "../assets/logo2.jpeg";
 
-export default function Navbar() {
+export default function Navbar({ solid = false }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("#home");
@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || solid
           ? "bg-black/85 shadow-lg shadow-black/20 backdrop-blur-md"
           : "bg-transparent"
       }`}

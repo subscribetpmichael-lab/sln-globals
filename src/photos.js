@@ -8,8 +8,11 @@ import waterbottle from "./assets/waterbottle.jpg";
 import jar from "./assets/water-jar.jpg";
 import coffee1 from "./assets/coffee-1.jpg";
 import coffee2 from "./assets/coffee-2.jpg";
-import basmati from "./assets/basmati.webp";
+import basmati from "./assets/basmati-1.jpg";
+import basmati2 from "./assets/basmati-2.jpg";
 import nonbasmati from "./assets/non-basmati-rice.jpg";
+/* bowl + scoop photo — actually SHORT-GRAIN (non-basmati) rice; kept for reuse */
+import riceBowl from "./assets/basmati.webp";
 import medicine from "./assets/medicine.jpg";
 import shipping from "./assets/shipping.jpg";
 
@@ -24,6 +27,8 @@ export default {
   coffee1,
   coffee2,
   basmati,
+  basmati2,
+  riceBowl,
   nonbasmati,
   medicine,
   shipping,

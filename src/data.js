@@ -108,7 +108,7 @@ export const CATEGORIES = [
       {
         id: "non-basmati-rice",
         name: "Non-Basmati Rice — Swarna · IR 64",
-        photo: "nonbasmati",
+        photo: "riceBowl",
         emoji: "🌾",
         hs: "1006.30",
         pack: "Jute / non-woven / vacuum-pack, 5–50 kg",

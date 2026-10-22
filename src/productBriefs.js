@@ -82,7 +82,7 @@ export const BRIEFS = {
     varieties: "1121 · 1509 · Pusa · Traditional",
     intro:
       "sources export-grade basmati rice from India's Punjab–Haryana and Uttarakhand–UP belts to buyer-defined variety, grain length, purity, moisture and breakage specifications — every lot is checked at the mill and before dispatch, with hygienic processing at certified facilities.",
-    photo: { main: "basmati", alt: "Aged basmati rice in a wooden bowl with a wooden scoop", gallery: "basmati", galleryAlt: "Long-grain aged basmati, sorted and packed for export" },
+    photo: { main: "basmati", alt: "Extra-long aged 1121 basmati grains in a wooden scoop", gallery: "basmati2", galleryAlt: "Long, slender basmati grains sorted and packed for export" },
     regions: [
       "Punjab — premium aged lots",
       "Haryana — 1121 & 1509 belt",
@@ -122,7 +122,7 @@ export const BRIEFS = {
     varieties: "Swarna · IR 64 · IR 36 · Sona Masoori · Broken",
     intro:
       "export a wide range of non-basmati rice varieties that meet international standards in quality, hygiene and taste — short to long grain lots with distinct flavour and high yield, sourced from select farms using sustainable cultivation and processed with hygienic, closely monitored milling.",
-    photo: { main: "nonbasmati", alt: "Sortex-cleaned non-basmati rice in bulk sacks", gallery: "nonbasmati", galleryAlt: "Non-basmati rice, double-polished and ready for export packing" },
+    photo: { main: "riceBowl", alt: "Short-grain non-basmati rice in a wooden bowl with a scoop", gallery: "riceBowl", galleryAlt: "Non-basmati rice, polished and ready for export packing" },
     regions: [
       "Andhra Pradesh — Sona Masoori & Swarna belt",
       "Telangana — parboiled rice mills",

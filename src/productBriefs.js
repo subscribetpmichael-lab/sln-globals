@@ -48,7 +48,7 @@ export const BRIEFS = {
     varieties: "Arabica · Robusta · Speciality",
     intro:
       "source Indian coffee to buyer-defined grade, origin, processing, physical parameters and cup profile, with supplier verification and lot-based quality confirmation before shipment commitment.",
-    photo: { main: "coffee1", alt: "Robusta and Arabica beans in jute sacks", gallery: "coffee2", galleryAlt: "Green coffee beans cupped in hands" },
+    photo: { main: "coffee1", alt: "Roasted Arabica and Robusta beans close-up", gallery: "coffee2", galleryAlt: "Robusta beans spilling from a jute sack" },
     regions: ["Karnataka", "Kerala", "Tamil Nadu"],
     buyers: [
       "Commercial coffee buyers",

@@ -82,7 +82,7 @@ export const BRIEFS = {
     varieties: "Feed · Food-grade · Grits · Flour",
     intro:
       "source Indian maize and corn through verified suppliers and processors to match buyer requirements for grade, moisture, quality parameters, packaging, destination and Incoterms.",
-    photo: { main: "corn1", alt: "Fresh yellow maize cobs in their husks", gallery: "corn2", galleryAlt: "Harvested maize cobs, dried and ready for milling" },
+    photo: { main: "corn3", alt: "Dried yellow maize kernels ready for milling", gallery: "corn2", galleryAlt: "Harvested maize cobs, dried and ready for milling" },
     regions: [
       "Maharashtra",
       "Karnataka",

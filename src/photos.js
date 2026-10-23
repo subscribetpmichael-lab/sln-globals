@@ -8,7 +8,7 @@ import waterbottle from "./assets/waterbottle.jpg";
 import jar from "./assets/water-jar.jpg";
 import coffee1 from "./assets/coffee-1.jpg";
 import coffee2 from "./assets/coffee-2.jpg";
-import corn1 from "./assets/corn1.jpg";
+import corn3 from "./assets/corn3.jpeg";
 import corn2 from "./assets/corn2.jpg";
 import basmati from "./assets/basmati-1.jpg";
 import basmati2 from "./assets/basmati-2.jpg";
@@ -25,7 +25,7 @@ export default {
   jar,
   coffee1,
   coffee2,
-  corn1,
+  corn3,
   corn2,
   basmati,
   basmati2,

@@ -146,7 +146,7 @@ export const CATEGORIES = [
       {
         id: "corn",
         name: "Corn & Maize — Feed & Food Grade",
-        photo: "corn1",
+        photo: "corn3",
         emoji: "🌽",
         hs: "1005.90",
         pack: "Jute / PP export bags, bulk liner",

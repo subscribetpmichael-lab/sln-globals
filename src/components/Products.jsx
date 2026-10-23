@@ -5,13 +5,14 @@ const CAT_COLOR = {
   spices: { chip: "bg-red-100 text-red-700" },
   water: { chip: "bg-sky-100 text-sky-700" },
   coffee: { chip: "bg-amber-100 text-amber-800" },
+  corn: { chip: "bg-orange-100 text-orange-700" },
   rice: { chip: "bg-yellow-100 text-yellow-800" },
   nonbasmati: { chip: "bg-lime-100 text-lime-800" },
   pharma: { chip: "bg-violet-100 text-violet-700" },
 };
 
 // products with a full sourcing-brief page
-const BRIEF_IDS = new Set(["chilli", "coffee", "basmati", "non-basmati-rice", "turmeric"]);
+const BRIEF_IDS = new Set(["chilli", "coffee", "basmati", "non-basmati-rice", "turmeric", "corn"]);
 
 export default function Products() {
   const items = CATEGORIES.flatMap((c) =>

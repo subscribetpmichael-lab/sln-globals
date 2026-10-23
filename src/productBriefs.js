@@ -77,6 +77,46 @@ export const BRIEFS = {
       "coffee type, grade, processing, screen, moisture, quantity, packaging, destination and Incoterm requirements",
   },
 
+  corn: {
+    title: "Corn & Maize",
+    varieties: "Feed · Food-grade · Grits · Flour",
+    intro:
+      "source Indian maize and corn through verified suppliers and processors to match buyer requirements for grade, moisture, quality parameters, packaging, destination and Incoterms.",
+    photo: { main: "corn1", alt: "Fresh yellow maize cobs in their husks", gallery: "corn2", galleryAlt: "Harvested maize cobs, dried and ready for milling" },
+    regions: [
+      "Maharashtra",
+      "Karnataka",
+      "Andhra Pradesh",
+      "Rajasthan",
+      "Bihar",
+    ],
+    buyers: [
+      "Animal feed manufacturers",
+      "Poultry, aquafeed, swine and cattle feed buyers",
+      "Food manufacturers",
+      "Wet mills and starch processors",
+      "Industrial buyers — ethanol & bio-based materials",
+      "Distributors & wholesalers",
+    ],
+    flow: [
+      "Supplier screening and audit",
+      "Buyer-aligned lot sourcing",
+      "Lab testing and quality verification where required",
+      "Documentation, packaging and export coordination",
+    ],
+    types: [
+      "Yellow Maize — feed grade",
+      "Food-grade Yellow Maize",
+      "White Maize",
+      "Corn Grits",
+      "Corn Meal",
+      "Corn Flour",
+      "Industrial maize — ethanol, bio-based materials and starch derivatives",
+    ],
+    catalogueNeeds:
+      "corn product, grade, moisture and quality limits, packaging, quantity, destination and Incoterm requirements",
+  },
+
   basmati: {
     title: "Basmati Rice",
     varieties: "1121 · 1509 · Pusa · Traditional",

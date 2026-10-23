@@ -136,6 +136,25 @@ export const CATEGORIES = [
       },
     ],
   },
+  {
+    id: "corn",
+    label: "Corn & Maize",
+    emoji: "🌽",
+    blurb: "Indian maize and corn through verified suppliers — feed, food-grade, grits, meal and flour to buyer specification.",
+    tag: "grade / moisture verified",
+    items: [
+      {
+        id: "corn",
+        name: "Corn & Maize — Feed & Food Grade",
+        photo: "corn1",
+        emoji: "🌽",
+        hs: "1005.90",
+        pack: "Jute / PP export bags, bulk liner",
+        moq: "25 MT",
+        desc: "Yellow and white maize from the Maharashtra–Karnataka belt — feed and food grade, plus grits, meal and flour, verified to your quality brief.",
+      },
+    ],
+  },
   /* ---- Pharmaceutical Formulations temporarily hidden from products ----
      Uncomment this category to bring pharma back into
      Our Products, the contact form and the footer. */

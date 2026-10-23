@@ -18,6 +18,7 @@ const BRIEF_ROUTES = {
   "#basmati": "basmati",
   "#non-basmati-rice": "non-basmati-rice",
   "#turmeric": "turmeric",
+  "#corn": "corn",
 };
 
 export default function App() {

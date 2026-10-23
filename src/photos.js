@@ -8,6 +8,8 @@ import waterbottle from "./assets/waterbottle.jpg";
 import jar from "./assets/water-jar.jpg";
 import coffee1 from "./assets/coffee-1.jpg";
 import coffee2 from "./assets/coffee-2.jpg";
+import corn1 from "./assets/corn1.jpg";
+import corn2 from "./assets/corn2.jpg";
 import basmati from "./assets/basmati-1.jpg";
 import basmati2 from "./assets/basmati-2.jpg";
 /* bowl + scoop photo — actually SHORT-GRAIN (non-basmati) rice */
@@ -23,6 +25,8 @@ export default {
   jar,
   coffee1,
   coffee2,
+  corn1,
+  corn2,
   basmati,
   basmati2,
   riceBowl,

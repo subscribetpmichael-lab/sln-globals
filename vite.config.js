@@ -3,8 +3,10 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
-// GITHUB_PAGES=true (set in the GH Actions workflow) builds with the /repo/ base path
+// GitHub Pages serves the site from the custom domain slnglobals.com,
+// so assets resolve at the root path. (If serving via the
+// github.io/sln-globals URL again, switch base back to "/sln-globals/".)
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: process.env.GITHUB_PAGES === "true" ? "/sln-globals/" : "/",
+  base: "/",
 })
